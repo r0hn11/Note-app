@@ -146,7 +146,7 @@ menu_links[3].onclick = ()=>{
 }
 
 // closing on outside click
-const ids = ['body', 'root', 'note', 'head', 'about']
+const ids = ['body', 'root', 'note_title', 'note', 'head', 'about']
 window.onclick = (e)=>{
     if(ids.includes(e.target.id.toString())){
         menu.classList.add('hidden')
