@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <div id="root" class="flex-col">
+
+        <div id="parent" class="container flex-col">
+            <div id="head" class="flex-row heading">
+                <input type="text" id="note_title" class="title" value="Title">
+                <div id="menu_icon" class="flex-row">
+                    <svg width="25" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="2.2"/>
+                        <circle cx="15" cy="5" r="2.2"/>
+                        <circle cx="25" cy="5" r="2.2"/>
+                    </svg>
+                </div>
+            </div>
+            <div id="colors" class="swatch_par flex-row">
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+                <div class="swatch"></div>
+            </div>
+            <div id="note_area" class="lower">
+                <textarea id="note" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <div class="menus">
+            <div id="menu" class="menu_div submenu flex-col hidden">
+                <li>Switch theme</li>
+                <li>Change color</li>
+                <li>Clear note</li>
+                <li>About</li>
+            </div>
+            
+            <div id="confirm" class="confirm_div submenu flex-col hidden">
+                <p class="ttl">Confirm clear</p>
+                <li>Yes</li>
+                <li>No</li>
+            </div>
+
+            <div id="about" class="about_div submenu hidden">
+                This is a mini web-app for storing a note.<br>
+                The app works on <strong>localstorage</strong> of your web browser. Note is stored as a form of plain text and has an infinite life span until browser's localstorage is cleared <strong>manually</strong> (or just by selecting option 'Clear note').<br>
+                Cleared notes <strong>cannot</strong> be reclaimed in any case. Closing browser window will not clear the note, neither shutting down your device will.<hr>
+                Click anywhere to dismiss.
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="/js/note.js"></script>
+</html>
