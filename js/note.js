@@ -33,17 +33,24 @@ while(i!=swatches.length){
 // inputs
 
 if(localStorage.getItem('title') != null){note_title.value = localStorage.getItem('title')}
-else{note_title.value = window.innerWidth+' '+window.innerHeight}
+else{note_title.value = 'Title'}
 if(localStorage.getItem('note') != null){note.value = localStorage.getItem('note')}
 if(localStorage.getItem('theme') != null){document.documentElement.style.setProperty('--clr', localStorage.getItem('theme'))}
 if(localStorage.getItem('theme') != null){document.documentElement.style.setProperty('--txt-theme', localStorage.getItem('theme-txt'))}
 
-note_title.onmousemove = ()=>{
+note_title.onblur = ()=>{
     localStorage.setItem('title', note_title.value)
 }
-note.onmousemove = ()=>{
+note.onblur = ()=>{
     localStorage.setItem('note', note.value)
 }
+window.onmousemove = ()=>{
+    localStorage.setItem('title', note_title.value)
+}
+window.onmousemove = ()=>{
+    localStorage.setItem('note', note.value)
+}
+
 
 // menus
 

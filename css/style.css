@@ -43,7 +43,7 @@ body{
     box-shadow: 0 0 10px var(--shd);
     min-width: 350px;
     max-width: 350px;
-    border-radius: 7px;
+    border-radius: 5px;
     overflow: hidden;
     position: relative;
 }
@@ -179,8 +179,9 @@ body{
     #root{font-size: 14px;}
     .menus>#menu, .menus>#confirm{right: 15%;}
     .submenu>li{padding: 5px 15px;}
+    .menus>#about{max-width: 35ch;}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .container{min-width: 300px;}
     .container>.lower>textarea{min-height: 300px;}
     .menus>#about{max-width: 30ch;}
