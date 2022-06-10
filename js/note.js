@@ -33,7 +33,7 @@ while(i!=swatches.length){
 // inputs
 
 if(localStorage.getItem('title') != null){note_title.value = localStorage.getItem('title')}
-else{note_title.value = 'Title'}
+else{note_title.value = window.innerWidth+' '+window.innerHeight}
 if(localStorage.getItem('note') != null){note.value = localStorage.getItem('note')}
 if(localStorage.getItem('theme') != null){document.documentElement.style.setProperty('--clr', localStorage.getItem('theme'))}
 if(localStorage.getItem('theme') != null){document.documentElement.style.setProperty('--txt-theme', localStorage.getItem('theme-txt'))}
