@@ -56,7 +56,11 @@ body{
     align-items: center;
     z-index: 11;
 }
-.container>.heading>.title{font-size: 1.2em; font-weight: var(--wght);}
+.container>.heading>.title{
+    font-size: 1.2em;
+    font-weight: var(--wght);
+    max-width: 200px;
+}
 .container>.heading>#menu_icon{
     cursor: pointer;
     margin-left: auto;
@@ -183,6 +187,6 @@ body{
 }
 @media screen and (max-width: 350px) {
     .container{min-width: 250px; max-width: 250px;}
-    .container>.heading>.title{width: 50%;}
+    .container>.heading>.title{max-width: 130px;}
     .menus>#about{max-width: 25ch;}
 }
