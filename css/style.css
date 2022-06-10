@@ -118,7 +118,7 @@ body{
     font-size: 0.95em;
     padding: var(--pd) 5px var(--pd) var(--pd);
     width: 100%;
-    min-height: 230px;
+    min-height: 280px;
     position: relative;
     z-index: 8;
 }
