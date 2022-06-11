@@ -16,13 +16,13 @@ const note_title = document.getElementById('note_title')
 const note = document.getElementById('note')
 
 const colors = [
-    'hsl(50, 100%, 60%)',
-    'hsl(101, 50%, 60%)',
-    'hsl(194, 93%, 70%)',
-    'hsl(333, 80%, 85%)',
-    'hsl(230, 100%, 74%)'
+    '#E6B904',
+    '#65BA5A',
+    '#EA86C2',
+    '#B07FE0',
+    '#59C0E7'
 ]
-const text_colors = ['#0009', '#fff', '#0009', '#0009', '#fff']
+const text_colors = ['#0009', '#fff', '#fff', '#fff', '#0009']
 
 let i=0;
 while(i!=swatches.length){
