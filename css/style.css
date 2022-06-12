@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root{
     --bg: #eee;
     --contrast: #444;
     --card-bg: #fff;
-    --card-bg-dark: #eee;
+    --card-bg-dark: #ddd;
     --txt: #000a;
     --txt-fade: #0009;
     --shd: #0003;
@@ -95,31 +95,14 @@ body{
 
 /* Note area */
 .container>.lower{position: relative; background: var(--card-bg);}
-/* .container>.lower::before, .container>.lower::after{
-    content: '';
-    position: absolute;
-    width: calc(100% - 1.5vw);
-    height: 30px;
-    background: linear-gradient(transparent 10%, var(--card-bg) 50%);
-    left: 0;
-    bottom: 0;
-    pointer-events: none;
-    z-index: 9;
-    transition: 0.3s 0.5s ease-in-out;
-}
-.container>.lower::after{
-    height: 20px;
-    bottom: unset;
-    top: 0;
-    background: linear-gradient(var(--card-bg), transparent);
-} */
+
 .container>.lower>textarea{
     resize: none;
     font-size: 0.95em;
     padding: var(--pd) 5px var(--pd) var(--pd);
     width: 100%;
     min-height: 280px;
-    height: 50vh;
+    height: 40vh;
     position: relative;
     z-index: 8;
 }

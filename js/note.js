@@ -75,7 +75,7 @@ function setLight(){
     document.documentElement.style.setProperty('--bg','#eee')
     document.documentElement.style.setProperty('--contrast','#444')
     document.documentElement.style.setProperty('--card-bg','#fff')
-    document.documentElement.style.setProperty('--card-bg-dark','#eee')
+    document.documentElement.style.setProperty('--card-bg-dark','#ddd')
     document.documentElement.style.setProperty('--txt','#000a')
     document.documentElement.style.setProperty('--txt-fade','#0009')
     document.documentElement.style.setProperty('--shd','#0003')
@@ -154,4 +154,3 @@ window.onclick = (e)=>{
         color_box.classList.remove('drop_down')
     }
 }
-
