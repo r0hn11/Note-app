@@ -38,16 +38,10 @@ if(localStorage.getItem('note') != null){note.value = localStorage.getItem('note
 if(localStorage.getItem('theme') != null){document.documentElement.style.setProperty('--clr', localStorage.getItem('theme'))}
 if(localStorage.getItem('theme') != null){document.documentElement.style.setProperty('--txt-theme', localStorage.getItem('theme-txt'))}
 
-note_title.onblur = ()=>{
+note_title.oninput = ()=>{
     localStorage.setItem('title', note_title.value)
 }
-note.onblur = ()=>{
-    localStorage.setItem('note', note.value)
-}
-window.onmousemove = ()=>{
-    localStorage.setItem('title', note_title.value)
-}
-window.onmousemove = ()=>{
+note.oninput = ()=>{
     localStorage.setItem('note', note.value)
 }
 
